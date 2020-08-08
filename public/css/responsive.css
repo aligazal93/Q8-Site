@@ -1,0 +1,285 @@
+@media only screen and (max-width:990px) {
+    .slider .soldier img
+    {
+        left:0px;
+        top:100px;
+        width:50%;
+        position: absolute;
+    }
+    .slider .perview-slider
+    {
+        margin-right: 50px;
+        margin-top: 50px;
+    }
+    .header .main-menu ul li
+    {
+        display: inline-block;
+        margin-left: 5px;
+        position: relative;
+        font-size: 10px;
+    }
+    .header .col-sm-3
+    {
+        padding: 0px;
+    }
+
+    .slider .soldier img
+    {
+        left:30px;
+        top: 70px;
+        width: 50%;
+        position: absolute;
+    }
+    .slider .soldier
+    {
+        position: relative;
+        left: 0px;
+    }
+    .slider .main-slider .owl-dots
+    {
+        top:10px;
+    }
+    .banner .banner-content p
+    {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        line-height: 25px;
+        text-align: center;
+        font-size: 14px;
+        padding-top: 100px;
+        padding-right:10px;
+        padding-left:10px;
+    }
+    .banner .banner-content img
+    {
+        position: absolute;
+        right: 0px;
+        width: 120px;
+        display: block;
+        margin: 0 auto;
+        left: 0px;
+        top:5px;
+    }
+    .banner .banner-content
+    {
+        height:180px;
+    }
+    .best-offer .best-slider
+    {
+        margin-bottom:50px;
+    }
+    .best-offer .best-slider .owl-nav
+    {
+        margin-top:20px;
+    }
+    .best-offer .best-slider .owl-prev
+    {
+        position: absolute;
+        float: right;
+        padding: 10px 20px;
+        background-color: #F36531;
+        right:100px;
+        color: #fff;
+    }
+    .best-offer .best-slider .owl-next
+    {
+        color: #fff;
+        background-color: #F36531;
+        padding: 10px 20px;
+        position: absolute;
+        float: left;
+        left:100px;
+    }
+
+    .common-offer .common-slider .owl-nav
+    {
+        margin-top:20px;
+    }
+    .common-offer .common-slider .owl-prev
+    {
+        position: absolute;
+        float: right;
+        padding: 10px 20px;
+        background-color: #F36531;
+        right:100px;
+        color: #fff;
+    }
+    .common-offer .common-slider .owl-next
+    {
+        color: #fff;
+        background-color: #F36531;
+        padding: 10px 20px;
+        position: absolute;
+        float: left;
+        left:100px;
+    }
+    .common-offer .common-slider
+    {
+        margin-bottom: 65px;
+    }
+    .subscribe .sub-txt
+    {
+        margin-top: 30px;
+    }
+    .subscribe .sub-txt h4
+    {
+        margin-bottom: 30px;
+    }
+    .subscribe .sub-txt h4 i
+    {
+        font-size: 28px;
+        position: absolute;
+        right: 120px;
+        top: -37px;
+    }
+    .subscribe form input
+    {
+        padding: 15px;
+        width: 100%;
+        border-radius: 15px;
+        border: 0;
+    }
+    .subscribe form button
+    {
+        width: 120px;
+        color: #fff;
+        border: 0;
+        border-radius: 15px;
+        background-color: #2c2220;
+        padding: 10px;
+        margin: 0 auto;
+        display: block;
+        margin-top:10px;
+    }
+    .footer
+    {
+    text-align: center;
+    }
+    .footer .copyright img
+    {
+        float: none;
+    }
+
+}
+
+    @media only screen and (max-width:767px) {
+
+    .header .main-menu ul
+    {
+    display: none;
+    }
+    .header .logo img
+    {
+        float: right;
+    }
+    .part-child-shoes , .part-child-bag , .part-child-accessoires
+    {
+        left:0px;
+        margin:0 auto;
+        width:90%;
+        right: 0px;
+    }
+    .more
+    {
+        margin-top:10px;
+        float: none;
+        text-align: center;
+    }
+    .slider .soldier
+    {
+        display: none;
+    }
+    .slider .perview-slider
+    {
+        margin-right: 0px;
+        width:100%!important;
+    }
+    .slider .perview-slider img
+    {
+        height:60px!important;
+    }
+    .slider .main-slider .owl-dots
+    {
+        top:40px;
+    }
+    .more .dropdown-menu
+    {
+        left: 125px;
+        padding-top: 10px;
+        top: 40px;
+    }
+    .drop-2
+    {
+        position: absolute;
+        top: 41px;
+        left: 20px;
+    }
+
+        .slider
+        {
+            height:420px;
+        }
+        .rate-customer .tab-content .disc p
+        {
+            width:100%;
+        }
+        .rate-customer .tab-content .more-disc p {
+            width: 100%;
+            padding-right:0px;
+        }
+        .rate-customer .tab-content .more-disc ul
+        {
+            padding-right:10px;
+        }
+        .rate-customer .tab-content .more-disc ul li i
+        {
+            font-size: 12px;
+            margin-left: 5px;
+            color: #f36531;
+            line-height: 30px;
+        }
+        .rate-customer .tab-content .customer p
+        {
+            margin-right:0px;
+        }
+        .rate-customer .tab-content .customer
+        {
+            padding-right:0px;
+            text-align: center;
+        }
+        .rate-customer .tab-content .customer h4:after
+        {
+            position: absolute;
+            right: 0px;
+            margin: 0 auto;
+            left: 0px;
+        }
+        .rate-customer .tab-content .customer h6
+        {
+            margin-right:0px;
+        }
+
+
+
+}
+
+
+@media only screen and (max-width:330px) {
+    .slider .perview-slider
+    {
+        margin-top: 50px;
+    }
+    .shoes-section .the-pro .price h5
+    {
+       margin-left:5px;
+        font-size: 12px;
+    }
+    .rate-customer .the-tabs ul li
+    {
+        display: inline-block;
+        margin-left: 5px;
+        font-size: 12px;
+    }
+
+}
