@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,6 +11,31 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+/* Slides Route */
+Route::get('/slides', 'SlideController@index');
+Route::get('/slides.create', 'SlideController@create');
+Route::post('/slides', 'SlideController@store');
+Route::get('/slides/{slide}', 'SlideController@show');
+Route::get('/slides/{slide}/edit', 'SlideController@edit');
+Route::PATCH('/slides/{slide}', 'SlideController@update');
+Route::DELETE('/slides/{slide}', 'SlideController@destroy');
+
+/* Categories Route */
+Route::get('/categories', 'CategoryController@index');
+Route::get('/categories.create', 'CategoryController@create');
+Route::post('/categories', 'CategoryController@store');
+Route::get('/categories/{category}/edit', 'CategoryController@edit');
+Route::PATCH('/categories/{category}', 'CategoryController@update');
+Route::DELETE('/categories/{category}', 'CategoryController@destroy');
+
+
+
+
+
+Route::get('/dashboard', function () {
+    return view('dashboard.index');
+});
 
 Route::get('/', function () {
     return view('index');

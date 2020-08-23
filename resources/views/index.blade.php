@@ -9,7 +9,15 @@
                 <div class="main-slider">
                     <div class="item">
                         <div class="perview-slider">
-                            <img src="images/nike.png" alt="">
+                             <img src="{{ asset('interface/images/nike.png') }}" alt="">
+                           <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
+                            <a href="">التفاصيل</a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="perview-slider">
+                        <img src="{{ asset('interface/images/addidas.png') }}" alt="">
                             <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
                             <a href="">التفاصيل</a>
                         </div>
@@ -17,15 +25,7 @@
 
                     <div class="item">
                         <div class="perview-slider">
-                            <img src="images/addidas.png" alt="">
-                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
-                            <a href="">التفاصيل</a>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="perview-slider">
-                            <img src="images/nike.png" alt="">
+                        <img src="{{ asset('interface/images/nike.png') }}" alt="">
                             <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
                             <a href="">التفاصيل</a>
                         </div>
@@ -34,7 +34,7 @@
             </div>
             
             <div class="soldier">
-                <img src="images/soldier.png" alt="">
+            <img src="{{ asset('interface/images/soldier.png') }}" alt="">
             </div>
 
 
@@ -49,37 +49,38 @@
         <div class="row">
                 <div class="col-sm-2 col-xs-6">
                     <div class="brand-logo">
-                        <img src="images/salomon.png" alt="">
+                    <img src="{{ asset('interface/images/salomon.png') }}" alt="">
                     </div>
                 </div>
 
                 <div class="col-sm-2 col-xs-6">
                     <div class="brand-logo">
-                        <img src="images/under.png" alt="">
+                    <img src="{{ asset('interface/images/under.png') }}" alt="">
                     </div>
                 </div>
 
                 <div class="col-sm-2 col-xs-6">
                     <div class="brand-logo">
-                        <img src="images/propper.png" alt="">
+                        <img src="{{ asset('interface/images/propper.png') }}" alt="">
+
                     </div>
                 </div>
 
                 <div class="col-sm-2 col-xs-6">
                     <div class="brand-logo">
-                        <img src="images/condor.png" alt="">
+                    <img src="{{ asset('interface/images/condor.png') }}" alt="">
                     </div>
                 </div>
 
                 <div class="col-sm-2 col-xs-6">
                     <div class="brand-logo">
-                        <img src="images/propper.png" alt="">
+                    <img src="{{ asset('interface/images/propper.png') }}" alt="">
                     </div>
                 </div>
 
                 <div class="col-sm-2 col-xs-6">
                     <div class="brand-logo">
-                        <img src="images/511-tactical.png" alt="">
+                    <img src="{{ asset('interface/images/511-tactical.png') }}" alt="">
                     </div>
                 </div>
 
@@ -152,7 +153,7 @@
                             <div class="the-pro">
                                 <span>الأحذيه</span>
                                 <p>اسم المنتج</p>
-                                <img src="images/pro-1.png" alt="">
+                                 <img src="{{ asset('interface/images/pro-1.png') }}" alt="">
                                 <div class="price">
                                     <h5 style="text-decoration: line-through">800 ريال</h5>
                                     <h5>500 ريال</h5>
@@ -170,7 +171,7 @@
                             <div class="the-pro">
                                 <span>الأحذيه</span>
                                 <p>اسم المنتج</p>
-                                <img src="images/pro-2.png" alt="">
+                                <img src="{{ asset('interface/images/pro-2.png') }}" alt="">
                                 <div class="price">
                                     <h5 style="text-decoration: line-through">800 ريال</h5>
                                     <h5>500 ريال</h5>
@@ -188,7 +189,7 @@
                             <div class="the-pro">
                                 <span>الأحذيه</span>
                                 <p>اسم المنتج</p>
-                                <img src="images/pro-3.png" alt="">
+                                <img src="{{ asset('interface/images/pro-3.png') }}" alt="">
                                 <div class="price">
                                     <h5 style="text-decoration: line-through">800 ريال</h5>
                                     <h5>500 ريال</h5>
@@ -206,7 +207,7 @@
                             <div class="the-pro">
                                 <span>الأحذيه</span>
                                 <p>اسم المنتج</p>
-                                <img src="images/pro-4.png" alt="">
+                                <img src="{{ asset('interface/images/pro-4.png') }}" alt="">
                                 <div class="price">
                                     <h5 style="text-decoration: line-through">800 ريال</h5>
                                     <h5>500 ريال</h5>
@@ -224,7 +225,7 @@
                             <div class="the-pro">
                                 <span>الأحذيه</span>
                                 <p>اسم المنتج</p>
-                                <img src="images/pro-1.png" alt="">
+                                <img src="{{ asset('interface/images/pro-1.png') }}" alt="">
                                 <div class="price">
                                     <h5 style="text-decoration: line-through">800 ريال</h5>
                                     <h5>500 ريال</h5>
@@ -242,7 +243,7 @@
                             <div class="the-pro">
                                 <span>الأحذيه</span>
                                 <p>اسم المنتج</p>
-                                <img src="images/pro-2.png" alt="">
+                                <img src="{{ asset('interface/images/pro-1.png') }}" alt="">
                                 <div class="price">
                                     <h5 style="text-decoration: line-through">800 ريال</h5>
                                     <h5>500 ريال</h5>
@@ -260,7 +261,7 @@
                             <div class="the-pro">
                                 <span>الأحذيه</span>
                                 <p>اسم المنتج</p>
-                                <img src="images/pro-3.png" alt="">
+                                <img src="{{ asset('interface/images/pro-2.png') }}" alt="">
                                 <div class="price">
                                     <h5 style="text-decoration: line-through">800 ريال</h5>
                                     <h5>500 ريال</h5>
@@ -278,7 +279,7 @@
                             <div class="the-pro">
                                 <span>الأحذيه</span>
                                 <p>اسم المنتج</p>
-                                <img src="images/pro-1.png" alt="">
+                                <img src="{{ asset('interface/images/pro-1.png') }}" alt="">
                                 <div class="price">
                                     <h5 style="text-decoration: line-through">800</h5>
                                     <h5>500 ريال</h5>
@@ -340,7 +341,7 @@
                         <div class="the-pro">
                             <span>الأحذيه</span>
                             <p>اسم المنتج</p>
-                            <img src="images/pro-1.png" alt="">
+                            <img src="{{ asset('interface/images/pro-1.png') }}" alt="">
                             <div class="price">
                                 <h5 style="text-decoration: line-through">800 ريال</h5>
                                 <h5>500 ريال</h5>
@@ -358,7 +359,7 @@
                         <div class="the-pro">
                             <span>الأحذيه</span>
                             <p>اسم المنتج</p>
-                            <img src="images/pro-2.png" alt="">
+                            <img src="{{ asset('interface/images/pro-2.png') }}" alt="">
                             <div class="price">
                                 <h5 style="text-decoration: line-through">800 ريال</h5>
                                 <h5>500 ريال</h5>
@@ -376,7 +377,7 @@
                         <div class="the-pro">
                             <span>الأحذيه</span>
                             <p>اسم المنتج</p>
-                            <img src="images/pro-3.png" alt="">
+                            <img src="{{ asset('interface/images/pro-3.png') }}" alt="">
                             <div class="price">
                                 <h5 style="text-decoration: line-through">800 ريال</h5>
                                 <h5>500 ريال</h5>
@@ -394,7 +395,7 @@
                         <div class="the-pro">
                             <span>الأحذيه</span>
                             <p>اسم المنتج</p>
-                            <img src="images/pro-4.png" alt="">
+                            <img src="{{ asset('interface/images/pro-4.png') }}" alt="">
                             <div class="price">
                                 <h5 style="text-decoration: line-through">800 ريال</h5>
                                 <h5>500 ريال</h5>
@@ -412,7 +413,7 @@
                         <div class="the-pro">
                             <span>الأحذيه</span>
                             <p>اسم المنتج</p>
-                            <img src="images/pro-1.png" alt="">
+                            <img src="{{ asset('interface/images/pro-1.png') }}" alt="">
                             <div class="price">
                                 <h5 style="text-decoration: line-through">800 ريال</h5>
                                 <h5>500 ريال</h5>
@@ -430,7 +431,7 @@
                         <div class="the-pro">
                             <span>الأحذيه</span>
                             <p>اسم المنتج</p>
-                            <img src="images/pro-2.png" alt="">
+                            <img src="{{ asset('interface/images/pro-2.png') }}" alt="">
                             <div class="price">
                                 <h5 style="text-decoration: line-through">800 ريال</h5>
                                 <h5>500 ريال</h5>
@@ -448,7 +449,7 @@
                         <div class="the-pro">
                             <span>الأحذيه</span>
                             <p>اسم المنتج</p>
-                            <img src="images/pro-3.png" alt="">
+                            <img src="{{ asset('interface/images/pro-3.png') }}" alt="">
                             <div class="price">
                                 <h5 style="text-decoration: line-through">800 ريال</h5>
                                 <h5>500 ريال</h5>
@@ -466,7 +467,7 @@
                         <div class="the-pro">
                             <span>الأحذيه</span>
                             <p>اسم المنتج</p>
-                            <img src="images/pro-1.png" alt="">
+                            <img src="{{ asset('interface/images/pro-1.png') }}" alt="">
                             <div class="price">
                                 <h5 style="text-decoration: line-through">800</h5>
                                 <h5>500 ريال</h5>

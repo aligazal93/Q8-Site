@@ -6,7 +6,7 @@
                 <div class="col-sm-12 col-xs-12">
                     <div class="col-sm-3 col-xs-12">
                         <div class="logo-footer">
-                            <a href=""><img src="images/logo.png"></a>
+                            <a href=""><img src="{{asset('interface/images/logo.png')}}"></a>
                             <p><i class="fas fa-headphones"></i> 9666645488 - 46487874854 </p>
                             <div class="social">
                                 <ul>
@@ -65,7 +65,7 @@
                             <p>جميع الحقوق محفوظه</p>
                         </div>
                         <div class="col-sm-6 col-xs-12">
-                            <img src="images/payment.png" alt="">
+                        <img src="{{ asset('interface/images/payment.png') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -80,11 +80,11 @@
 
 <!--==========================================================================================-->
 
-<script src="js/jquery-1.11.0.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/wow.min.js"></script>
+<script src="interface/js/jquery-1.11.0.min.js"></script>
+<script src="interface/js/bootstrap.min.js"></script>
+<script src="interface/js/wow.min.js"></script>
 <script>new WOW().init();</script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/script.js"></script>
+<script src="interface/js/owl.carousel.min.js"></script>
+<script src="interface/js/script.js"></script>
 </body>
 </html>

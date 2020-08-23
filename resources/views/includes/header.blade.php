@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>الرئيسيه</title>
     <!-- Bootstrap font-aweasome css -->
-    <link href="font-awesome/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link href="interface/font-awesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="interface/css/bootstrap.css">
+    <link rel="stylesheet" href="interface/css/style.css">
+    <link rel="stylesheet" href="interface/css/responsive.css">
+    <link rel="stylesheet" href="interface/css/owl.carousel.css">
 </head>
 <body>
 
 
 <div class='contain'>
-    <img src="images/logo-2.png" alt="">
+    <img src="{{ asset('interface/images/logo-2.png') }}" alt="">
 </div>
 
 <div class="the-after"></div>
@@ -24,7 +24,7 @@
         <div class="row">
                 <div class="col-sm-3 col-xs-12">
                     <div class="logo">
-                        <a href=""><img src="images/logo.png" alt=""></a>
+                        <a href=""><img src="{{ asset('interface/images/logo.png') }}"></a>
                     </div>
                 </div><!--col-sm-2-->
 
@@ -109,7 +109,7 @@
 
                 <div class="col-sm-5 col-xs-12">
                     <div class="new-offer">
-                        <img src="images/shoes.png" alt="">
+                    <img src=" {{ asset('interface/images/shoes.png') }}" alt="">
                         <ul>
                             <li><a href=""><span><i class="fas fa-eye"></i></span></a></li>
                             <li><a href=""><span><i class="fas fa-cart-plus"></i></span></a></li>
@@ -141,7 +141,7 @@
 
                 <div class="col-sm-5 col-xs-12">
                     <div class="new-offer">
-                        <img src="images/bag.png" alt="">
+                    <img src=" {{ asset('interface/images/bag.png') }}" alt="">
                         <ul>
                             <li><a href=""><span><i class="fas fa-eye"></i></span></a></li>
                             <li><a href=""><span><i class="fas fa-cart-plus"></i></span></a></li>
@@ -173,7 +173,7 @@
 
                 <div class="col-sm-5 col-xs-12">
                     <div class="new-offer">
-                        <img src="images/accessoire.png" alt="">
+                        <img src=" {{ asset('interface/images/accessoire.png') }}" alt="">
                         <ul>
                             <li><a href=""><span><i class="fas fa-eye"></i></span></a></li>
                             <li><a href=""><span><i class="fas fa-cart-plus"></i></span></a></li>
