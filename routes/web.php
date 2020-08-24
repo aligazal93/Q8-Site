@@ -30,6 +30,15 @@ Route::PATCH('/categories/{category}', 'CategoryController@update');
 Route::DELETE('/categories/{category}', 'CategoryController@destroy');
 
 
+/* Brands Route */
+Route::get('/brands', 'BrandController@index');
+Route::get('/brands.create', 'BrandController@create');
+Route::post('/brands', 'BrandController@store');
+Route::get('/brands/{brand}/edit', 'BrandController@edit');
+Route::PATCH('/brands/{brand}', 'BrandController@update');
+Route::DELETE('/brands/{brand}', 'BrandController@destroy');
+
+
 
 
 

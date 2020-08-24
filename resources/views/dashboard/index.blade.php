@@ -96,13 +96,21 @@
                   </div>
                </li>
 
-			   <li class="nav-item dropdown">
+			         <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="{{ url('categories') }}">All Category</a>
                     <a class="dropdown-item" href="{{ url('categories.create') }}"><i style="margin-right:5px" class="fa fa-plus"></i> Create a New Category</a>
                   </div>
                </li>
+
+               <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Brands</a>
+                   <div class="dropdown-menu">
+                     <a class="dropdown-item" href="{{ url('brands') }}">All Brands</a>
+                     <a class="dropdown-item" href="{{ url('brands.create') }}"><i style="margin-right:5px" class="fa fa-plus"></i> Create a New Brand</a>
+                   </div>
+                </li>
 
 
 
@@ -128,7 +136,7 @@
           <div class="container">
             <div class="row">
               <div class="col-sm-12">
-                <h1 class="text-center" style="margin-top:50px" > Welcome To Dashboard of <span class="text-primary">Q8 Site</span> </h1>
+                <!-- <h1 class="text-center" style="margin-top:50px" > Welcome To Dashboard of <span class="text-primary">Q8 Site</span> </h1> -->
               </div>
             </div>
 
