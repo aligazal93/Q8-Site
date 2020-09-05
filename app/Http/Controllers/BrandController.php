@@ -36,7 +36,7 @@ class BrandController extends Controller
     $brand -> name = request('name');
     $brand -> image = $image_new_name;
     $brand->save();
-    return redirect('brands');
+    return redirect('/dashboard/brands');
   }
 
   public function edit(Brand $brand)
@@ -59,8 +59,9 @@ class BrandController extends Controller
           $brand->save();
       }
 
+
       $brand->update($data);
-      return redirect('brands')-> with('message' , 'Thank You . You ara Updated a Brand successfully' ); ;
+      return redirect('/dashboard/brands')-> with('message' , 'Thank You . You ara Updated a Brand successfully' ); ;
 
   }
 
@@ -74,15 +75,14 @@ class BrandController extends Controller
         {
             unlink($path.$image);
             $brand->delete();
-            return redirect('brands')
+            return redirect('/dashboard/brands')
                 -> with('message' , 'Thank You . You ara Deleting a Brand successfully' );
         }
         else
         {
           $brand->delete();
-          return redirect('brands')
+          return redirect('/dashboard/brands')
               -> with('message' , 'Thank You . You ara Deleting a Brand successfully' );
-
         }
 
   }

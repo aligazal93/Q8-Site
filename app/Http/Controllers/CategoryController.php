@@ -35,7 +35,7 @@ class CategoryController extends Controller
       $category -> name = request('name');
       $category -> image = $image_new_name;
       $category->save();
-      return redirect('categories');
+      return redirect('/dashboard/categories');
     }
 
     public function edit(Category $category)
@@ -59,7 +59,7 @@ class CategoryController extends Controller
         }
 
         $category->update($data);
-        return redirect('categories')-> with('message' , 'Thank You . You ara Updated a Category successfully' ); ;
+        return redirect('/dashboard/categories/')-> with('message' , 'Thank You . You ara Updated a Category successfully' );
 
     }
 
@@ -73,15 +73,15 @@ class CategoryController extends Controller
           {
               unlink($path.$image);
               $category->delete();
-              return redirect('categories')
+              return redirect('/dashboard/categories/')
                   -> with('message' , 'Thank You . You ara Deleting a category successfully' );
           }
           else
           {
             $category->delete();
-            return redirect('categories')
-                -> with('message' , 'Thank You . You ara Deleting a category successfully' );
+            return redirect('/dashboard/categories/')
 
+                -> with('message' , 'Thank You . You ara Deleting a category successfully' );
           }
 
     }

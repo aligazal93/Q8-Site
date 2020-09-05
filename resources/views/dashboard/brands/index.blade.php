@@ -27,6 +27,8 @@
             </thead>
             <tbody>
 
+              @if($brands->count())
+
               @foreach($brands as $brand)
               <tr>
                 <th scope="row">{{$brand->id}}</th>
@@ -34,8 +36,8 @@
                 <td scope="row" style="width:800px;">{{$brand->name}}</td>
 
                 <td class="text-center" style="font-size:20px" >
-                   <a class="btn btn-primary" href="/brands/{{$brand->id}}/edit"> <i class="fa fa-edit" title="Edit"></i> </a>
-                   <form action="{{url('/brands/'.$brand->id)}}" method="POST">
+                   <a class="btn btn-primary" href="/dashboard/brands/{{$brand->id}}/edit"> <i class="fa fa-edit" title="Edit"></i> </a>
+                   <form action="{{url('/dashboard/brands/'.$brand->id)}}" method="POST">
                      @method('DELETE')
                        @csrf
                      <button type="submit" class="btn btn-danger" title="DELETE" > <i class="fa fa-trash"></i></button>
@@ -44,6 +46,14 @@
               </tr>
 
               @endforeach
+
+
+                            @else
+
+                            <h1 class="text-danger text-center" > No Brands Yet  </h1>
+
+                            @endif
+
             </tbody>
           </table>
 

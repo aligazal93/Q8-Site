@@ -36,7 +36,7 @@ class SlideController extends Controller
         $slide -> content = request('content');
         $slide -> image = $image_new_name;
         $slide -> save();
-        return redirect('slides') -> with('message' , 'Thank You . You ara Adding a New Slide successfully' );
+        return redirect('/dashboard/slides/') -> with('message' , 'Thank You . You ara Adding a New Slide successfully' );
     }
 
     public function show($slide)
@@ -70,7 +70,7 @@ class SlideController extends Controller
 
         $updatedData = request()->except('image');
         $slide-> update($updatedData);
-        return redirect('slides')-> with('message' , 'Thank You . You ara Updated a Slide successfully' ); ;
+        return redirect('/dashboard/slides')-> with('message' , 'Thank You . You ara Updated a Slide successfully' ); ;
 
     }
 
@@ -83,13 +83,13 @@ class SlideController extends Controller
         {
             unlink($path.$image);
             $slide->delete();
-            return redirect('slides')
+            return redirect('/dashboard/slides/')
             -> with('message' , 'Thank You . You ara Deleting a Slide successfully' );
         }
         else
         {
             $slide->delete();
-            return redirect('slides')
+            return redirect('/dashboard/slides/')
             -> with('message' , 'Thank You . You ara Deleting a Slide successfully' );
         }
 

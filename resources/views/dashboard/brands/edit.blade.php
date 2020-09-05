@@ -7,7 +7,7 @@
 
         <div class="col-sm-12">
 
-          <form action="{{url('/brands/'.$brand ->id)}}" method="post" enctype="multipart/form-data">
+          <form action="{{url('/dashboard/brands/'.$brand ->id)}}" method="post" enctype="multipart/form-data">
               @csrf
               @method('patch')
               <div class="form-group">

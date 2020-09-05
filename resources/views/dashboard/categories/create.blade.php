@@ -7,7 +7,7 @@
 
         <div class="col-sm-12">
 
-          <form action="{{ url('categories') }}" method="post" enctype="multipart/form-data">
+          <form action="{{ url('/dashboard/categories') }}" method="post" enctype="multipart/form-data">
               @csrf
               <div class="form-group">
                   <input type="file" name="image" class="form-control mb-2" value="{{old('image')}}">
