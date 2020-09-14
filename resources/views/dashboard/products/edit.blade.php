@@ -1,4 +1,4 @@
-@extends('dashboard.index')
+@extends('dashboard.master')
 @section('content')
     <div class="row">
         <div class="col-sm-12">
@@ -16,7 +16,7 @@
               </div>
 
               <div class="form-group">
-                  <input type="text" name="details" placeholder="Enter Product details" class="form-control mb-2" value="{{old('details')}}">
+                  <input type="text" name="details" placeholder="Enter Product details" class="form-control mb-2" value="{{old('details') ?? $product->details }}">
                   <p class="text-danger">{{$errors->first('details')}}</p>
               </div>
 
@@ -36,12 +36,23 @@
 
               
               <div class="form-group">
-                  <input type="file" name="image" class="form-control mb-2" value="{{old('image')}}">
+                <img style="width:200px;display:block" src="{{ asset('uploads/products/'.$product->image ) }}" class="img-responsive img-thumbnil"  alt="">
+                <input type="file" name="image" class="form-control mb-2" value="{{old('image')}}">
+               <p class="text-danger">{{$errors->first('image')}}</p>
+              </div>
+
+
+
+
+              <div class="form-group">
+                  <input type="file" multiple  name="images[]" class="form-control mb-2" value="{{old('image')}}">
                   <p class="text-danger">{{$errors->first('image')}}</p>
               </div>
 
+          
+
               <div class="form-group">
-                  <button type="submit" class="btn btn-primary"> Add Product </button>
+                  <button type="submit" class="btn btn-primary"> Edit Product </button>
               </div>
 
 

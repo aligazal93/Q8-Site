@@ -1,4 +1,4 @@
-@extends('dashboard.index')
+@extends('dashboard.master')
 @section('content')
 
 <div class="container">
@@ -29,6 +29,14 @@
               <div class="form-group">
                   <input type="text" name="phone" class="form-control mb-2" value="{{old('phone')?? $user->phone }}">
                   <p class="text-danger">{{$errors->first('phone')}}</p>
+              </div>
+
+              
+              <div class="form-group">
+              <select name="role" id=""  class="form-control mb-2"  value="{{old('role')?? $user->role }}">
+                <option value="user">مستخدم عادى</option>
+                <option value="admin">مشرف</option>
+              </select>
               </div>
 
 

@@ -1,4 +1,4 @@
-@extends('dashboard.index')
+@extends('dashboard.master')
 @section('content')
     <div class="row">
         <div class="col-sm-12">

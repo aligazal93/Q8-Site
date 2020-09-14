@@ -1,4 +1,4 @@
-@extends('dashboard.index')
+@extends('dashboard.master')
 @section('content')
     <div class="row">
         <div class="col-sm-12">
@@ -37,6 +37,13 @@
               <div class="form-group">
                   <input type="file" name="image" class="form-control mb-2" value="{{old('image')}}">
                   <p class="text-danger">{{$errors->first('pic')}}</p>
+              </div>
+
+              <div class="form-group">
+              <select name="role" id=""  class="form-control mb-2">
+                <option value="user">مستخدم عادى</option>
+                <option value="admin">مشرف</option>
+              </select>
               </div>
 
               <div class="form-group">

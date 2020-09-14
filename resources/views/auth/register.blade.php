@@ -1,35 +1,8 @@
+@extends('dashboard.before')
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Sign in - Tabler - Premium and Open Source dashboard template with responsive and high quality UI.</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <meta name="msapplication-TileColor" content="#206bc4"/>
-    <meta name="theme-color" content="#206bc4"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="mobile-web-app-capable" content="yes"/>
-    <meta name="HandheldFriendly" content="True"/>
-    <meta name="MobileOptimized" content="320"/>
-    <meta name="robots" content="noindex,nofollow,noarchive"/>
-    <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/>
-    <!-- CSS files -->
+@section('content')
 
-<link href="{{asset('admin_assets/css/tabler.min.css') }}" rel="stylesheet"/>
-<link href="{{asset('admin_assets/css/demo.min.css') }}" rel="stylesheet"/>
-
-    <style>
-      body {
-      	display: none;
-      }
-    </style>
-  </head>
-  <body class="antialiased border-top-wide border-primary d-flex flex-column">
-    <div class="flex-fill d-flex flex-column justify-content-center">
-      <div class="container-tight py-6">
+<div class="container-tight py-6">
         <div class="text-center mb-4">
           <img src="{{asset('interface/images/logo.png') }}" height="80" alt="">
         </div>
@@ -123,3 +96,5 @@
     </script>
   </body>
 </html>
+
+@endsection

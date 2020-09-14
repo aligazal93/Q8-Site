@@ -10,12 +10,28 @@
                   </div>
             @endif
 
-            <h1 class="text-center text-success mt-4"> Details of Slide </h1>
+            <h1 class="text-center text-success" style="margin-bottom:15px;margin-top:15px;" > Details of Slide </h1>
 
-            <div class="card" style="width:70%; display: block;margin:0 auto;margin-top: 25px;">
-              <img src="{{ asset('uploads/slides/'.$slide->image) }}" style="width:150px;height:150px;margin: 0 auto;display:block">
-                <div class="card-body">
-                 <p class="card-text text-center">{{$slide->content}}</p>
+
+
+            <div class="col-md-12 col-xl-12">
+              <div class="card">
+                <div class="row row-0">
+                  <div class="col-3">
+                  <img src="{{ asset('uploads/slides/'.$slide->image) }}" style="width:100%x;height:150px;display:block">
+                  </div>
+                  <div class="col">
+                    <div class="card-body">
+                      <h3 class="card-title">Slie Number : {{$slide->id}}</h3>
+                      <p class="card-text text-justify">{{$slide->content}}</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+ 
+
               </div>
             </div>
 

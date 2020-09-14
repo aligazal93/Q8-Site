@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use Hash;
+use Auth;
 class UserController extends Controller
 {
 
@@ -26,6 +27,7 @@ class UserController extends Controller
             'phone' => ['required', 'string','max:20' , 'min:10'],
             'password' => ['required', 'string', 'min:8'],
             'image' => 'required|image',
+            'role' => 'required',
         ]);
 
         $image = $request->image;
@@ -35,19 +37,15 @@ class UserController extends Controller
 
 
         $user = new User();
-        $user -> name = request('name');
-        $user -> email = request('email');
-        $user -> phone = request('phone');
-        $user -> image = $image_new_name;
-        $user -> password = Hash::make( request('password'));
+        $user->name = request('name');
+        $user->email = request('email');
+        $user->phone = request('phone');
+        $user->role = request('role');
+        $user->image = $image_new_name;
+        $user->password = Hash::make( request('password'));
         $user->save();
         return redirect('/dashboard/users/');
     }
-    public function show($id)
-    {
-
-    }
-
     public function edit(User $user)
     {
         $users = User::all();
@@ -55,11 +53,13 @@ class UserController extends Controller
     }
     public function update(Request $request,User $user)
     {
+        // dd($request->all());
         $data = request()->validate([
             'name' => 'required|unique:users,name,'.$user->id,
             'email' => 'email:rfc,dns',
             'phone' => 'required',
             'password' => 'required',
+            'role' => 'required',
         ]);
 
 
@@ -72,7 +72,7 @@ class UserController extends Controller
         }
 
         $user-> update($data);
-        return redirect('dashboard/users/'.$user->id )-> with('message' , 'Thank You . You ara Updated a user successfully' ); ;
+        return redirect('dashboard/users/')-> with('message' , 'Thank You . You ara Updated a user successfully' ); ;
 
     }
     public function destroy(User $user)
@@ -98,4 +98,11 @@ class UserController extends Controller
 
 
     }
+
+    public function logout()
+    {
+        Auth::logout();
+        return redirect('/');
+    }
+
 }

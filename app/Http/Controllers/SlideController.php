@@ -8,6 +8,12 @@ use App\Slide;
 class SlideController extends Controller
 {
 
+    public function __contsruct()
+    {
+        $this->middleware('login');
+    }
+
+
     public function index()
     {
         $slides = Slide::all();

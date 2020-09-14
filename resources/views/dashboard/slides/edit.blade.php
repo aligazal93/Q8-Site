@@ -18,7 +18,6 @@
               <div class="form-group">
                 <img style="width:200px;display:block" src="{{ asset('uploads/slides/'.$slide->image) }}" class="img-responsive img-thumbnil"  alt="">
                 <input class="form-control mb-2" type="file"  name="image">
-
               </div>
 
               <div class="form-group">

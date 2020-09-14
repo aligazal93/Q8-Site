@@ -1,4 +1,4 @@
-<!-- @extends('dashboard.master') -->
+@extends('dashboard.before')
 
 @section('content')
 <div class="container">

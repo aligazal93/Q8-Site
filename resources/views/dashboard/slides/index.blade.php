@@ -17,53 +17,64 @@
             @endif
 
       @if(count($slides))
-
-
-
-      <table class="table table-bordered mt-2">
+      <div class="box">
+            <div class="card">
+              <div class="table-responsive">
+                <table class="table table-vcenter table-mobile-md card-table">
+                  <thead>
+                    <tr>
+                      <th>Pic</th>
+                      <th>Content</th>
+                      <th class="w-1"> Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                   @foreach($slides as $slide)
+                    <tr>
+                      <td data-label="Name">
+                        <div class="d-flex lh-sm py-1 align-items-center">
+                        <img src="{{ asset('uploads/slides/'.$slide->image) }}" style="width:180px;height:100px;border-radius: 10px;display:block">
+                        </div>
+                      </td>
+                      <td>
+                      {{$slide->content}}
+                      </td>
+                      <td>
+                        <div class="btn-list flex-nowrap">
+                          <a href="/dashboard/slides/{{$slide->id}}/edit" class="btn btn-white">
+                            Edit
+                          </a>
+                          <div class="dropdown">
+                            <button class="btn btn-white dropdown-toggle align-text-top" data-boundary="viewport" data-toggle="dropdown">Actions</button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">
+                              <form action="{{url('/dashboard/slides/'.$slide->id)}}" method="POST">
+                                @method('DELETE')
+                                  @csrf
+                                <button type="submit" style="border:none;background:transparent" title="DELETE" > Delete </button>
+                            </form>
+                              </a>
+                              <a class="dropdown-item" href="/dashboard/slides/{{$slide->id}}">
+                                Show
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    @endforeach
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
            
-           <thead>
-             <tr>
-               <th scope="col"> Id </th>
-               <th scope="col">Pic</th>
-               <th scope="col">Content</th>
-               <th scope="col" class="text-center">Option</th>
-             </tr>
-           </thead>
-           <tbody>
 
-           
-
-             @foreach($slides as $slide)
-             <tr>
-               <th scope="row">{{$slide->id}}</th>
-               <td><img src="{{ asset('uploads/slides/'.$slide->image) }}" style="width:80px;height:80px;margin: 0 auto;display:block"></td>
-               <td scope="row" style="width:800px;">{{$slide->content}}</td>
-
-               <td class="text-center" style="font-size:20px" >
-                  <a class="btn btn-primary" href="/dashboard/slides/{{$slide->id}}/edit"> <i class="fa fa-edit" title="Edit"></i> </a>
-                  <form action="{{url('/dashboard/slides/'.$slide->id)}}" method="POST">
-                    @method('DELETE')
-                      @csrf
-                    <button type="submit" class="btn btn-danger" title="DELETE" > <i class="fa fa-trash"></i></button>
-                 </form>
-                 <a class="btn btn-secondary"  href="/dashboard/slides/{{$slide->id}}"> <i class="fa fa-eye" title="Show"></i> </a>
-               </td>
-             </tr>
-
-             @endforeach
-         
-           </tbody>
-         </table>
-
-  @else 
-  <h1 class="text-danger text-center" > No Slides Yet  </h1>
+        @else 
+        <h1 class="text-danger text-center" > No Slides Yet  </h1>
 
       @endif
-
-
-
-        </div>
+      </div>
 
 
 
